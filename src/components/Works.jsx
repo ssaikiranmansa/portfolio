@@ -1,15 +1,13 @@
 import React, { Suspense, memo } from "react";
-import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
 
 // Memoize the ProjectCard component to prevent unnecessary re-renders
 const ProjectCard = memo(({ name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring")} className="w-full">
+    <div className="w-full">
       <div className="relative p-[2px] rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
         {/* Card Container */}
         <div className="bg-[#131313] p-4 md:p-5 rounded-2xl flex flex-col group h-[400px] sm:h-[450px]">
@@ -54,17 +52,15 @@ const ProjectCard = memo(({ name, description, tags, image, source_code_link }) 
           <h3 className="mt-4 text-white font-bold text-[18px] sm:text-[24px] text-center">{name}</h3>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 });
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
-        <p></p>
-      </motion.div>
+      <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
+      <p></p>
 
       {/* Responsive Grid Layout */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
@@ -75,6 +71,7 @@ const Works = () => {
           ))}
         </Suspense>
       </div>
+
       <br />
       <br />
       <p className={`${styles.sectionSubText} text-[#327fa8] text-center`}>For more projects, please visit the link below:</p>
