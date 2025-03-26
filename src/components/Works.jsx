@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, memo } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -6,18 +6,20 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
+// Memoize the ProjectCard component to prevent unnecessary re-renders
+const ProjectCard = memo(({ name, description, tags, image, source_code_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring")} className="w-full">
       <div className="relative p-[2px] rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
         {/* Card Container */}
         <div className="bg-[#131313] p-4 md:p-5 rounded-2xl flex flex-col group h-[400px] sm:h-[450px]">
-          {/* Image container */}
+          {/* Image container with lazy loading */}
           <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] overflow-hidden rounded-2xl">
             <img
               src={image}
               alt="project_image"
               className="w-full h-full object-contain rounded-2xl transition duration-300 group-hover:opacity-30"
+              loading="lazy"  // Lazy loading the images
             />
 
             {/* Description Overlay */}
@@ -54,7 +56,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
       </div>
     </motion.div>
   );
-};
+});
 
 const Works = () => {
   return (
@@ -66,9 +68,12 @@ const Works = () => {
 
       {/* Responsive Grid Layout */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} {...project} />
-        ))}
+        {/* Suspense for lazy loading of the project data */}
+        <Suspense fallback={<div>Loading projects...</div>}>
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} {...project} />
+          ))}
+        </Suspense>
       </div>
       <br />
       <br />
