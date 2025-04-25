@@ -120,17 +120,21 @@ export const AIML = [
 
 export const experiences = [
   {
-    title: "ML Engineer Intern",
+    title: "Machine Learning Engineer",
     company_name: " Rivach LLP",
     icon: rivach,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "April 2022 - May 2023",
     points: [
-      "Developed and trained a Convolutional Neural Network (CNN) using PyTorch to classify traffic signs across 43 categories, achieving 96.46% accuracy.",
-      "Applied data preprocessing techniques such as augmentation and normalization to enhance model robustness and generalization.",
-      "Fine-tuned CNN architecture and hyperparameters, achieving optimal performance with precision (0.9658), recall(0.9646), and F1-score (0.9645).",
-      "Deployed a real-time traffic sign classification app with Streamlit, improving user interaction through an intuitive interface.",
-      "Integrated real-time feedback and visualizations, enabling real-world applications in autonomous driving and traffic monitoring."
+      "Designed and implemented a geo-personalized gig recommendation engine using spatial clustering and collaborative filtering, resulting in a 42% improvement in task-user match accuracy across the Brekrr platform.",
+      "Engineered a robust identity verification system using Siamese neural networks and OpenCV, reducing fake profile creation by 35% and enhancing overall user trust",
+      "Developed predictive maintenance algorithms leveraging XGBoost and Random Forest, achieving 60% forecast accuracy and decreasing equipment downtime by 28% within the Landmanager ecosystem.",
+      "Spearheaded the deployment of a content-based recommender system powered by matrix factorization techniques, leading to a 50% increase in user engagement on Guiding Young Minds.",
+      "Implemented Transformer-based NLP moderation pipelines for real-time chat analysis and policy enforcement, cutting manual moderation overhead by 60% while ensuring regulatory compliance.",
+      "Optimized ML deployment pipelines using FastAPI and Docker within a microservices architecture, maintaining sub-200ms latency for high-frequency API interactions.",
+      "Automated scalable inference systems using AWS Lambda and Firebase Functions, reducing cloud compute expenses by 20% and improving deployment agility.",
+      "Established comprehensive monitoring solutions via MLflow and Prometheus, delivering 99.9% model uptime and real-time visibility into production model health.",
+      "Collaborated with cross-functional stakeholders to translate business requirements into ML-driven features, accelerating project delivery by 25% and improving end-user satisfaction."
     ],
   },
   {
@@ -138,7 +142,7 @@ export const experiences = [
     company_name: " Hashing.Company",
     icon: hashing,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "Sep 2021 - May 2022",
     points: [
       "Collaborated and Worked for the project “ 360 degree virtual tour of G.R.I.E.T using AR and VR “ as an 3 d modelling and graphic intern .",
       "Captured immersive 360-degree views using GoPro cameras to showcase campus infrastructure and key locations.",
