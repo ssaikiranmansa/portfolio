@@ -41,7 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-gray-400 text-sm sm:text-base leading-[26px] sm:leading-[30px]"
       >
-        I’m a a passionate Machine Learning Engineer with 1+ years of experience building intelligent systems. 
+        I’m a passionate Machine Learning Engineer with 1+ years of experience building intelligent systems. 
         As a recent MS in Computer Science graduate from the University at Buffalo, I specialize in developing production-grade 
         ML solutions using PyTorch, TensorFlow, and end-to-end MLOps pipelines. My expertise spans deep learning, computer vision, and 
         NLP - with growing interest in Generative AI and LLMs for creative problem-solving. Whether architecting recommendation systems, 
