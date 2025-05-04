@@ -124,7 +124,7 @@ export const experiences = [
     company_name: " Rivach LLP",
     icon: rivach,
     iconBg: "#161329",
-    date: "April 2022 - May 2023",
+    date: "July 2021 - June 2023",
     points: [
       "Designed and implemented a geo-personalized gig recommendation engine using spatial clustering and collaborative filtering, resulting in a 42% improvement in task-user match accuracy across the Brekrr platform.",
       "Engineered a robust identity verification system using Siamese neural networks and OpenCV, reducing fake profile creation by 35% and enhancing overall user trust",
@@ -142,7 +142,7 @@ export const experiences = [
     company_name: " Hashing.Company",
     icon: hashing,
     iconBg: "#161329",
-    date: "Sep 2021 - May 2022",
+    date: "Oct 2021 - Feb 2022",
     points: [
       "Collaborated and Worked for the project “ 360 degree virtual tour of G.R.I.E.T using AR and VR “ as an 3 d modelling and graphic intern .",
       "Captured immersive 360-degree views using GoPro cameras to showcase campus infrastructure and key locations.",
