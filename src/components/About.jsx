@@ -41,12 +41,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-gray-400 text-sm sm:text-base leading-[26px] sm:leading-[30px]"
       >
-        I’m a passionate Machine Learning Engineer with 2+ years of experience building intelligent systems. 
-        As a recent MS in Computer Science graduate from the University at Buffalo, I specialize in developing production-grade 
-        ML solutions using PyTorch, TensorFlow, and end-to-end MLOps pipelines. My expertise spans deep learning, computer vision, and 
-        NLP - with growing interest in Generative AI and LLMs for creative problem-solving. Whether architecting recommendation systems, 
-        optimizing computer vision models, or exploring the frontiers of generative technologies, I thrive on turning complex algorithms 
-        into real-world applications. Let's connect and explore how AI can push boundaries together!
+        I’m a passionate Machine Learning Engineer with 2+ years of experience, including 1 year as a Data Scientist at a startup where I built data pipelines, 
+        fraud detection models, and A/B testing frameworks that improved user engagement and operational efficiency. I recently completed my MS in Computer Science 
+        from the University at Buffalo and specialize in production-grade ML solutions using PyTorch, TensorFlow, and MLOps tools. My expertise spans deep learning, 
+        computer vision, and NLP, with a growing interest in Generative AI and LLMs. I thrive on building intelligent systems that translate complex algorithms into impactful, 
+        real-world applications.
       </motion.p>
 
       {/* Education Section */}
